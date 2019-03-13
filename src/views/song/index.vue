@@ -1,5 +1,5 @@
 <template>
-  <div class="u-height">
+  <div class="u-height songapp">
     <div class="m-song_newfst" v-if="song.songs&&song.songs.length>0">
       <div class="m-song-bg" :style="songBgStyle"></div>
       <span class="m-logo "></span>
@@ -255,9 +255,8 @@ export default {
 
 <style lang="less">
 @import "../../assets/less/song.less";
-#app-box {
-  .weui-tabbar {
+.songapp + .weui-tabbar {
     display: none !important;
-  }
+  
 }
 </style>
