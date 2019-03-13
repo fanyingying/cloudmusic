@@ -147,7 +147,7 @@ export default {
           }.bind(this))
         )
         .catch(err => {
-            this.$msgbox('温馨提示2','无法请求数据，请查看网络'+err)
+            this.$msgbox('温馨提示','无法请求数据，请查看网络')
         });
     }
   },

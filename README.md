@@ -33,9 +33,9 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
 ## API http://musicapi.leanapp.cn/
 
 
-
-export default personalized
+## http://cv.ftqq.com/#
 const personalized = {
     data: 
     
 }
+export default personalized

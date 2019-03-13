@@ -31,11 +31,11 @@ module.exports = {
   },
   // 根据id获取歌曲信息
   getSong: (vue, params) => {
-    return request(vue, params, '/song/detail')
+    return isLocalData?vue.$localData.songs.song[params.ids]:request(vue, params, '/song/detail')
   },
   // 根据id获取歌词
   getLyric: (vue, params) => {
-    return request(vue, params, '/lyric')
+    return isLocalData?vue.$localData.songs.lyricData[params.id]:request(vue, params, '/lyric')
   },
   // 根据id获取音乐url
   getSongUrl: (vue, params) => {
